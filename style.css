@@ -162,7 +162,7 @@ nav .burger-container.open .burger::after {
   background-color: var(--primary-color);
   border: none;
   height: 50px;
-  width: 46%;
+  width: 48%;
   border-radius: 5px;
 }
 
@@ -174,7 +174,7 @@ nav .burger-container.open .burger::after {
 }
 
 #home button a img {
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 #home button a .btn-text {
@@ -187,6 +187,33 @@ nav .burger-container.open .burger::after {
 #home button a .btn-text .platform {
     font-weight: 600;
 }   
+
+#home .hero-images {
+    margin-top: 60px;
+}
+
+@media (max-width: 340px ) {
+    nav img {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: -10px;
+    }
+
+    nav .burger-container {
+        position: relative;
+        right: 10px;
+        width: 40px;
+    }
+
+    #home {
+        padding: 0 10px;
+    }
+
+    #home button a .btn-text {
+        font-size: 10px;
+    }
+}
 
 @media (min-width: 520px) {
     #home .btn-div {
@@ -246,19 +273,38 @@ nav .burger-container.open .burger::after {
   #home h1 {
     text-align: center;
     font-size: 50px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   #home p {
     text-align: center;
     font-size: 25px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   #home .btn-div {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 70%;
   }
+
+  #home .hero-images {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #home .hero-images .top-images, #home .hero-images .bottom-images {
+    display: flex;
+  }
+
+  #home .hero-images img {
+    height: 300px;
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  #home .hero-images .top-images .middle-one, #home .hero-images .bottom-images .middle-two {
+    height: 200px;
+    }
 }
 
 @media (min-width: 1100px) {
