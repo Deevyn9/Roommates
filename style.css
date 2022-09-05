@@ -209,6 +209,7 @@ nav .burger-container.open .burger::after {
 
 #home .hero-images .top-images {
     margin-bottom: 20px;
+    background-color: yellow;
 }
 
 #home .hero-images .top-images .middle-one {
