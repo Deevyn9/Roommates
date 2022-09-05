@@ -202,7 +202,7 @@ nav .burger-container.open .burger::after {
 
 #home .hero-images .top-images, #home .hero-images .bottom-images {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
