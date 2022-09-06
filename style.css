@@ -17,10 +17,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.hidden {
-  overflow: hidden;
-}
-
 nav {
   height: 80px;
   width: 100vw;
@@ -100,22 +96,12 @@ nav .burger-container.open .burger::after {
   flex-direction: column;
 }
 
-.links-container.fill {
-  width: 100vw;
-  height: 100vh;
-}
-
 .nav-links {
   height: 100%;
   width: 0vw;
   background-color: white;
   align-self: flex-end;
   display: none;
-}
-
-.nav-links.active {
-  display: flex;
-  width: 70%;
 }
 
 .nav-links ul {
@@ -259,6 +245,22 @@ nav .burger-container.open .burger::after {
   font-size: 18px;
   font-weight: 900;
   text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+  .hidden {
+    overflow: hidden;
+  }
+
+  .links-container.fill {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav-links.active {
+    display: flex;
+    width: 70%;
+  }
 }
 
 @media (max-width: 340px) {
