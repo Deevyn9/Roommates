@@ -6,4 +6,5 @@ function openNav() {
     navContainer.classList.toggle('open')
     linksContainer.classList.toggle('fill')
     navLinks.classList.toggle('active')
+    document.body.classList.toggle('hidden')
 }
