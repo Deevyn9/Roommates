@@ -238,13 +238,55 @@ nav .burger-container.open .burger::after {
 
 #about p {
   margin: 20px 0 20px 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #about .more {
   font-size: 18px;
   font-weight: 900;
   text-decoration: underline;
+}
+
+/* SERVICES SECTION */
+#services {
+    padding: 0 27px;
+    margin: 50px 0;
+}
+
+#services h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+#services h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 600; 
+    text-align: center;
+  }
+
+#services .service {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#services .service img {
+    width: 60px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#services .service h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#services .service p {
+    font-size: 20px;
 }
 
 @media (max-width: 740px) {
@@ -287,6 +329,18 @@ nav .burger-container.open .burger::after {
 
   #about {
     padding: 0 10px;
+  }
+
+  #services {
+    padding: 0 10px;
+  }
+
+  #services h3 {
+    font-size: 26px;
+  }
+
+  #services .service p {
+    font-size: 20px;
   }
 }
 
@@ -387,6 +441,10 @@ nav .burger-container.open .burger::after {
     height: 200px;
   }
 
+  #about {
+    margin-top: 100px;
+  }
+
   #about h2 {
     font-size: 30px;
   }
@@ -403,6 +461,33 @@ nav .burger-container.open .burger::after {
     font-size: 22px;
     text-align: center;
     max-width: 60%;
+  }
+
+  #services {
+    margin-top: 100px;
+  }
+
+  #services h2 {
+    text-align: center;
+  }
+
+  #services h3 {
+    text-align: center;  
+  }
+
+  #services .service {
+    margin-top: 50px;
+  }
+
+  #services .service h4 {
+    font-size: 25px;
+  }
+
+  #services .service p {
+    text-align: center;
+    font-size: 22px;
+    max-width: 60%;
+    align-self: center;
   }
 }
 
