@@ -249,44 +249,75 @@ nav .burger-container.open .burger::after {
 
 /* SERVICES SECTION */
 #services {
-    padding: 0 27px;
-    margin: 50px 0;
+  padding: 0 27px;
+  margin: 50px 0;
 }
 
 #services h2 {
-    color: var(--primary-color);
-    font-size: 25px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 25px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 #services h3 {
-    color: black;
-    font-size: 30px;
-    font-weight: 600; 
-    text-align: center;
-  }
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
 
 #services .service {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #services .service img {
-    width: 60px;
-    align-self: center;
-    margin-bottom: 10px;
+  width: 60px;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 #services .service h4 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #services .service p {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+#services .find__apart h2 {
+  color: black;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+#services .find__apart p {
+  font-size: 19px;
+}
+
+#services .find__apart .image-part {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.right__image-part {
+  margin-top: 30px;
+}
+
+#services .find__apart .image-part .left__image-part,
+#services .find__apart .image-part .right__image-part {
+  width: 47%;
+}
+
+#services .find__apart .image-part img {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 740px) {
@@ -472,7 +503,7 @@ nav .burger-container.open .burger::after {
   }
 
   #services h3 {
-    text-align: center;  
+    text-align: center;
   }
 
   #services .service {
@@ -488,6 +519,33 @@ nav .burger-container.open .burger::after {
     font-size: 22px;
     max-width: 60%;
     align-self: center;
+  }
+}
+
+@media (min-width: 800px) {
+  #services .find__apart .image-part {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    background-color: yellow;
+  }
+
+  #services .find__apart .image-part .left__image-part,
+  #services .find__apart .image-part .right__image-part {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    background-color: blue;
+  }
+
+  .right__image-part {
+    margin-top: 0px;
+    background-color: pink;
+  }
+
+  #services .find__apart .image-part img {
+    width: 50%;
+    margin-bottom: 0px;
   }
 }
 
