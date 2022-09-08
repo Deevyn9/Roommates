@@ -523,24 +523,41 @@ nav .burger-container.open .burger::after {
 }
 
 @media (min-width: 800px) {
-  #services .find__apart .image-part {
+#services .find__apart {
+  display: flex;
+  flex-direction: column;
+}
+
+    #services .find__apart h2 {
+  font-size: 28px;
+  margin-top: 60px;
+}
+
+#services .find__apart p {
+  margin-bottom: 30px;
+    font-size: 22px;
+  text-align: center;
+  max-width: 60%;
+  align-self: center;
+}
+    
+    #services .find__apart .image-part {
     display: flex;
+    gap: 20px;
     margin-top: 30px;
     width: 100%;
-    background-color: yellow;
   }
 
   #services .find__apart .image-part .left__image-part,
   #services .find__apart .image-part .right__image-part {
     display: flex;
+    gap: 20px;
     width: 50%;
     justify-content: space-evenly;
-    background-color: blue;
   }
 
   .right__image-part {
     margin-top: 0px;
-    background-color: pink;
   }
 
   #services .find__apart .image-part img {
