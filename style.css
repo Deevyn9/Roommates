@@ -688,6 +688,10 @@ font-size: 20px;
     width: 30%;
     /* flex-basis: 1; */
   }
+
+  #contact .grey-container .btn-div {
+    width: 60%;
+ }
 }
 
 @media (min-width: 1350px) {
