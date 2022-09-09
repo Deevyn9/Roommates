@@ -8,6 +8,7 @@
 
 :root {
   --primary-color: #ffd503;
+  --light-grey: #F0F0F0;
   --footer: #383737;
 }
 
@@ -291,8 +292,9 @@ nav .burger-container.open .burger::after {
 
 #services .find__apart h2 {
   color: black;
-  font-size: 22px;
+  font-size: 21px;
   margin-top: 40px;
+  text-align: center;
 }
 
 #services .find__apart p {
@@ -318,6 +320,64 @@ nav .burger-container.open .burger::after {
 #services .find__apart .image-part img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+#services .find__apart button {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* CONTACT SECTION *//* CONTACT SECTION *//* CONTACT SECTION */
+#contact .grey-container {
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 27px;
+}
+
+#contact .grey-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact .grey-container p {
+font-size: 14px;
+color: #504F4F;
+margin-bottom: 40px;
+text-align: center;
+}
+
+#contact .grey-container .btn-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contact .grey-container .btn {
+    border: none;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    width: 45%;
+    border-radius: 5px;
+}
+
+#contact .grey-container .btn.one {
+    background-color: white;
+}
+
+#contact .grey-container .btn.two {
+    color: white;
+    background-color: var(--footer);
 }
 
 @media (max-width: 740px) {
@@ -373,6 +433,10 @@ nav .burger-container.open .burger::after {
   #services .service p {
     font-size: 20px;
   }
+
+  #contact .grey-container .btn {
+    width: 48%;
+  }
 }
 
 @media (min-width: 520px) {
@@ -388,6 +452,15 @@ nav .burger-container.open .burger::after {
   #home button a .btn-text {
     font-size: 16px;
   }
+
+  #contact .grey-container .btn-div {
+    justify-content: space-evenly;
+}
+
+#contact .grey-container .btn {
+    height: 60px;
+    width: 200px;
+ }
 }
 
 @media (min-width: 740px) {
@@ -520,6 +593,24 @@ nav .burger-container.open .burger::after {
     max-width: 60%;
     align-self: center;
   }
+
+  #contact .grey-container h2 {
+    font-size: 28px;
+}
+
+#contact .grey-container p {
+font-size: 20px;
+}
+
+#contact .grey-container .btn-div {
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+#contact .grey-container .btn {
+    height: 60px;
+    width: 250px;
+ }
 }
 
 @media (min-width: 800px) {
@@ -564,6 +655,14 @@ nav .burger-container.open .burger::after {
     width: 50%;
     margin-bottom: 0px;
   }
+}
+
+@media (min-width: 900px) {
+    #services .find__apart button {
+    width: 600px;
+    align-self: center;
+    margin-top: 40px;
+ }
 }
 
 @media (min-width: 1100px) {
