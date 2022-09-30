@@ -23,10 +23,11 @@ body {
  header {
   height: 80px;
   width: 100%;
-  overflow-y: hidden;
+  
  }
 
 nav {
+  overflow-y: hidden;
   height: 100%;
   width: 100%;
   background-color: red;
